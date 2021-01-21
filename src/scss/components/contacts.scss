@@ -1,0 +1,75 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+
+    &__phone {
+        color: $black;
+        font-size: 25px;
+        line-height: 33px;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    &__item {  
+        margin-right: 18px;   
+    }
+
+    &__item:nth-child(3) {  
+        margin-right: 0px;   
+    }
+
+    &__link {
+        display: block;
+        width: 39px;
+        height: 39px;
+    }
+}
+
+@media (max-width: $tabletWidth) {
+    .contacts {
+
+        &__phone {
+            margin-bottom: 12px;
+            color: $black;
+            font-size: 16px;
+            font-style: normal;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+
+        &__phone::after {
+            position: absolute;
+            content: "";
+
+            width: 76px;
+            height: 72px;
+
+            left: -6px;
+            top: 0;
+
+            background: url(../img/phone24.svg) 0 0 no-repeat;
+        }
+
+        &__list {
+            margin: 0;
+            margin-left: auto;
+        }
+    }
+}
+
+@media (min-width: $tabletWidth) and (max-width: 1150px) {
+    .contacts {
+        &__phone {
+        font-size: 22px;
+        line-height: 30px;
+        }
+    }
+ }

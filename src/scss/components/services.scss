@@ -1,0 +1,424 @@
+.services {
+    background: $blue;
+
+    &--hide {
+        display: none;
+    }
+
+    &__wrapper {
+        margin: 0 auto;
+        max-width: 1440px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: $white;
+        border-radius: 0px 0px 0px 100px;
+        padding: 30px 50px 145px;
+
+        &--about {
+            border-radius: 0px 50px 0px 0px;
+            padding: 55px 50px 10px;
+        }
+    }
+
+    &__list {
+        width: 100%;
+        height: 100px;
+        list-style: none;
+        display: flex;
+        margin-top: 70px;
+
+        &--about {
+            margin-top: 0;
+        }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: none;
+        position: relative;
+        box-sizing: border-box;
+        // padding-left: 100px;
+        margin-right: 25px;
+        width: 23%;
+        height: 100%;
+    }
+
+    &__item:nth-child(4) {
+        margin-right: 0;
+    }
+
+    &__link {
+        display: block;
+        box-sizing: border-box;
+        padding-left: 100px;
+        width: 100%;
+        height: 100%;
+        padding-top: 21px;
+        padding-right: 30px;
+        color: $black;
+
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+        text-transform: none;
+
+        &--padtop {
+            padding-top: 36px;
+        }
+
+        &--btn1::after {
+            position: absolute;
+            content: "";
+    
+            width: 100px;
+            height: 100px;
+    
+            bottom: 0;
+            left: 0;
+            top: 0;
+            right: 0;
+            background: url(../img/btn1.svg) 50% 50% no-repeat;
+        }
+
+        &--btn2::after {
+            position: absolute;
+            content: "";
+    
+            width: 100px;
+            height: 100px;
+    
+            bottom: 0;
+            left: 0;
+            top: 0;
+            right: 0;
+            background: url(../img/btn2.svg) 50% 50% no-repeat;
+        }
+
+        &--btn3::after {
+            position: absolute;
+            content: "";
+            width: 100px;
+            height: 100px;
+    
+            bottom: 0;
+            left: 0;
+            top: 0;
+            right: 0;
+            background: url(../img/btn3.svg) 50% 50% no-repeat;
+        }
+
+        &--btn4::after {
+            position: absolute;
+            content: "";
+    
+            width: 100px;
+            height: 100px;
+    
+            bottom: 0;
+            left: 0;
+            top: 0;
+            right: 0;
+            background: url(../img/btn4.svg) 50% 50% no-repeat;
+        }
+
+        &--btn1:active:after {
+            background: url(../img/btn1-white.svg) 50% 50% no-repeat;
+        }
+
+        &--btn2:active:after {
+            background: url(../img/btn2-white.svg) 50% 50% no-repeat;
+        }
+
+        &--btn3:active:after {
+            background: url(../img/btn3-white.svg) 50% 50% no-repeat;
+        }
+
+        &--btn4:active:after {
+            background: url(../img/btn4-white.svg) 50% 50% no-repeat;
+        }
+    }
+
+    &__link:active {
+        background: $blue;
+        color: $white;
+        border-radius: 10px;
+    }
+
+    &__link {
+        &--right-lower-border:active {
+            background: $blue;
+            color: $white;
+            border-radius: 10px 10px 40px 10px;
+        }
+    
+        &--left-lower-border:active {
+            background: $blue;
+            color: $white;
+            
+            border-radius: 10px 10px 10px 40px;
+        }
+    }
+
+    
+
+}
+
+@media (max-width: $tabletWidth) {
+    .services {
+        background: $white;
+
+        &--side {
+            background: $blue;
+        }
+
+        &--hide {
+            display: block;
+        }
+
+        &__wrapper {
+            margin: 0 auto;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            background: $blue;
+            border-radius: 0px 0px 0px 100px;
+            padding: 43px 0 56px;
+
+            
+            &--side {
+                background: $white;
+                border-radius: 0 0 0 100px;
+                padding: 0 0 56px;
+            }
+        }
+
+        &__title {
+            display: none;
+        }
+
+        &__list {
+            max-width: 300px;
+            height: auto;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 0;
+            margin: 0 auto;
+        }
+    
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            text-transform: none;
+            position: relative;
+            box-sizing: border-box;
+            padding-left: 0px;
+            
+
+            margin-right: 20px;
+            margin-top: 25px;
+            width: 140px;
+            height: 130px;
+        }
+
+        &__item:nth-child(2n) {
+            margin-right: 0;
+        }
+
+        &__item:nth-child(1) {
+            margin-top: 0;
+        }
+
+        &__item:nth-child(2) {
+            margin-top: 0;
+        }
+    
+        &__link {
+            background: $white;
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 92px;
+            color: $black;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 13px;
+            padding-bottom: 23px;
+
+            &--right-lower-border:active {
+                border-radius: 10px 10px 10px 10px;
+            }
+        
+            &--left-lower-border:active {
+                border-radius: 10px 10px 10px 10px;
+            }
+
+            &--active {
+                background: $blue;
+                color: $white;
+            }
+            
+            &--btn1::after {
+                position: absolute;
+                content: "";
+        
+                width: 140px;
+                height: 100px;
+        
+                bottom: 0;
+                left: 0;
+                top: 0;
+                right: 0;
+                background: url(../img/btn1.svg) 50% 50% no-repeat;
+            }
+
+            &--btn1-active::after {
+                position: absolute;
+                content: "";
+        
+                width: 140px;
+                height: 100px;
+        
+                bottom: 0;
+                left: 0;
+                top: 0;
+                right: 0;
+                background: url(../img/btn1-active.svg) 50% 50% no-repeat;
+            }
+    
+            &--btn2::after {
+                position: absolute;
+                content: "";
+        
+                width: 140px;
+                height: 100px;
+        
+                bottom: 0;
+                left: 0;
+                top: 0;
+                right: 0;
+                background: url(../img/btn2.svg) 50% 50% no-repeat;
+            }
+
+            &--btn2-active::after {
+                position: absolute;
+                content: "";
+        
+                width: 140px;
+                height: 100px;
+        
+                bottom: 0;
+                left: 0;
+                top: 0;
+                right: 0;
+                background: url(../img/btn2-active.svg) 50% 50% no-repeat;
+            }
+
+            &--btn3::after {
+                position: absolute;
+                content: "";
+                width: 140px;
+                height: 100px;
+        
+                bottom: 0;
+                left: 0;
+                top: 0;
+                right: 0;
+                background: url(../img/btn3.svg) 50% 50% no-repeat;
+            }
+
+            &--btn3-active::after {
+                position: absolute;
+                content: "";
+                width: 140px;
+                height: 100px;
+        
+                bottom: 0;
+                left: 0;
+                top: 0;
+                right: 0;
+                background: url(../img/btn3-active.svg) 50% 50% no-repeat;
+            }
+    
+            &--btn4::after {
+                position: absolute;
+                content: "";
+        
+                width: 140px;
+                height: 100px;
+        
+                bottom: 0;
+                left: 0;
+                top: 0;
+                right: 0;
+                background: url(../img/btn4.svg) 50% 50% no-repeat;
+            }
+
+            &--btn4-active::after {
+                position: absolute;
+                content: "";
+        
+                width: 140px;
+                height: 100px;
+        
+                bottom: 0;
+                left: 0;
+                top: 0;
+                right: 0;
+                background: url(../img/btn4-active.svg) 50% 50% no-repeat;
+            }
+        }
+    }
+}
+
+@media (min-width: 1060px) and (max-width: 1200px) {
+    .services {
+        &__link {
+            padding-left: 80px;
+            padding-top: 21px;
+            color: $black;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 29px;
+            letter-spacing: 0em;
+            text-align: center;
+
+            &--padtop {
+                padding-top: 36px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1060px) {
+    .services {
+        &__link {
+            padding-left: 80px;
+            padding-top: 35px;
+            color: $black;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 16px;
+            letter-spacing: 0em;
+            text-align: center;
+
+            &--padtop {
+                padding-top: 45px;
+            }
+        }
+    }
+}

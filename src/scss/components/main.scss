@@ -1,0 +1,212 @@
+.main {
+    
+    &__title {
+        color: $black;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 33px;
+        letter-spacing: 0em;
+        text-align: center;
+
+        &--white {
+            color: $white;
+        }
+
+        &--extra {         
+            font-size: 35px;
+            line-height: 46px;
+        }
+    }
+
+    tbody {
+        align-items: center;
+    }
+    &__table {
+        text-decoration: none;
+        border-collapse:collapse;
+        width:100%;
+        text-align:center;
+    }
+
+    &__td {
+        max-width: 400px;
+        white-space:pre-wrap;
+        padding: 25px 0 25px 50px;
+        vertical-align: middle;
+        border: 0px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0em;
+        
+
+        
+        letter-spacing: 0em;
+        text-align: left;
+
+        p {
+            line-height: 29px;
+        }
+
+        &--bold {
+            font-weight: 900;
+        }
+
+        &--price {
+            text-align: right;
+            padding: 25px 0;
+            vertical-align: baseline;
+        }
+
+        &--title {
+            text-align: center;
+            padding: 25px 0;
+        }
+
+        &--center {
+            padding-left: 0;
+            text-align: center;
+        }
+
+        
+    }
+
+    &__th {
+        white-space:pre-wrap;
+        padding: 50px 0px;
+        vertical-align: middle;
+        border: 0px;
+        text-align: center;
+        
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 27px;
+        letter-spacing: 0em;
+        
+
+
+        p {
+            line-height: 33px;
+        }
+
+        &--bold {
+            font-weight: 900;
+        }
+    }   
+}
+
+@media (max-width: $tabletWidth) {
+    .main {
+        &__title {
+            color: $black;
+            font-size: 55px;
+            line-height: 71.5px;
+            font-weight: 900;
+            text-align: center;
+            align-self: center;
+    
+            &--white {
+                color: $black;
+            }
+        }
+
+        &__title-serv {
+            color: $black;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 33px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+
+        &__title--healing {
+            
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 29px;
+            letter-spacing: 0em;
+            text-align: center;
+
+            &-white {
+                color: $white;
+            }
+        }
+
+        &__td {
+            max-width: 145px;
+            white-space:pre-wrap;
+            padding: 10px 60px 10px 0;
+            vertical-align: middle;
+            border: 0px;
+            
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px;
+            letter-spacing: 0em;
+            text-align: center;
+
+
+            text-align: left;
+    
+            p {
+                line-height: 16px;
+            }
+    
+            &--bold {
+                font-weight: 500;
+            }
+    
+            &--price {
+                text-align: right;
+                padding: 10px 0;
+            }
+
+            &--hide{
+                padding: 0;
+            }
+
+            &--title {
+                text-align: center;
+                padding: 10px 0;
+            }
+
+            &--center {
+                padding-right: 0;
+                text-align: center;
+            }
+
+        }
+    
+        &__th {
+            padding: 23px 0px;
+
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 29px;
+
+            p {
+                line-height: 29px;
+            }
+    
+            &--bold {
+                font-weight: 500;
+            }
+
+            &--small {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: center;
+
+            }
+        }
+    }
+}

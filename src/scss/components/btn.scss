@@ -1,0 +1,171 @@
+.btn {
+    color: $white;
+    font-size: 20px;
+    line-height: 26.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    width: 280px;
+    height: 65px;
+    border: 2px solid $blue;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.3);
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    
+    &--blue {
+        color: $white;
+        background-color: $blue;
+        border: 2px solid $blue;
+    }
+
+    &--pink {
+        color: $white;
+        background-color: $pink;
+        border: 2px solid $pink;  
+    }
+
+    &--pink:active {
+        border: 2px solid $blue;  
+        background-color: $blue;
+    }
+
+    &--send {
+        color: $blue;
+        background-color: $white;
+        border: 2px solid $blue;
+        border-radius: 10px 20px;
+    }
+
+    &--send:active, &--read:active {
+        color: $white;
+        background-color: $blue;    
+    }
+
+    &--smoothed {
+        border-radius: 10px 20px;
+    }
+
+    &--read {
+        color: $blue;
+        background-color: $white;
+        border: 2px solid $blue;
+        border-radius: 15px;
+    }
+
+    &--right-lower-border {
+        border-radius: 10px 10px 40px 10px;
+    }
+
+    &--left-lower-border {
+        border-radius: 10px 10px 10px 40px;
+    }
+
+    &--right-lower-border {
+        border-radius: 10px 10px 40px 10px;
+    }
+
+    &--left-lower-border {
+        border-radius: 10px 10px 10px 40px;
+    }
+
+    &--right-margin {
+        margin-bottom: 40px;
+    }
+}
+
+.btns {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media (max-width: $tabletWidth){
+    .btn {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: center;
+
+        width: 136px;
+        height: 37px;
+
+        &--right-lower-border {
+            border-radius: 10px 10px 10px 10px;
+        }
+
+        &--right-lower-border:active {
+            border-radius: 10px 10px 10px 10px;
+        }
+    
+        &--left-lower-border {
+            border-radius: 10px 10px 10px 10px;
+        }
+
+        &--left-lower-border:active {
+            border-radius: 10px 10px 10px 10px;
+        }
+
+        &--send {
+            color: $white;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: center;
+
+            background-color: $blue;
+            border: 2px solid $blue;
+            border-radius: 60px;
+            width: 280px;
+            height: 50px;
+        }
+
+        
+
+        &--read {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 21px;
+            letter-spacing: 0em;
+
+            width: 220px;
+            height: 60px;
+        }
+
+        &--send-mobile {
+            color: $blue;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: center;
+
+            background-color: $white;
+            border: 2px solid $blue;
+            border-radius: 60px;
+            width: 280px;
+            height: 50px;
+        }
+
+        &--right-margin {
+            margin-right: 0;
+            margin-bottom: 28px;
+        }
+
+    }
+
+    .btns {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

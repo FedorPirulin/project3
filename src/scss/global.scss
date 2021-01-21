@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    color: $black;
+    background-color: $white;
+    font-family: $arialFont;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  ul, li, p, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .visually-hidden:not(:focus):not(:active) {
+    width: 0;
+    height: 0;
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  @media (max-with: $tabletWidth) {
+    .container {
+      width: 360px;
+      margin: 0 auto;
+    }
+  }

@@ -1,0 +1,264 @@
+.healing {
+    background: $blue;
+
+    &--white {
+        background: $white;
+    }
+
+    &__wrapper {
+        margin: 0 auto;
+        max-width: 1440px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $black;
+        background: $white;
+        padding: 30px 220px 50px;
+        border-radius: 0px 100px 0px 50px;
+
+        &--about {
+            border-radius: 0px 0px 0px 50px;
+            padding: 10px 165px 20px;
+        }
+
+        &--intro {
+            display: block;
+            min-height: 360px;
+            padding: 55px 50px 45px;
+            border-radius: 0px 100px 0px 0px;
+
+            img {
+                display: block;
+                width: 537px;
+                height: 270px;
+                margin-left: 30px;
+                float: right;
+            }
+        }
+
+        &--nark {
+            background-image: url(../img/grugs.png);
+            background-repeat: no-repeat;
+            background-position-x: right;
+            background-size: contain;
+        }
+
+        &--alko {
+            background: $white url(../img/medbro.png) 100% 100% no-repeat;
+            background-size: cover;
+        }
+        
+        &--blue {
+            color: $white;
+            background: $blue;
+        }
+
+        &--no-left-br {
+            border-radius: 0px 100px 0px 0;
+        }
+
+        &--rehabilitation {
+            padding-bottom: 85px;
+        }
+
+        &--whyreh {
+            padding: 52px 220px 57px;
+        }
+
+        &--family {
+            padding: 65px 165px 120px;
+
+            &-desctop {
+                align-items: flex-start;
+            }
+        }
+    }
+
+    &__intro {  
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    &__title {
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 38px;
+        letter-spacing: 0em;
+        text-align: center;
+
+        &--family {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 27px;
+            letter-spacing: 0em;
+            text-align: left;
+
+            margin-top: 80px;
+        }
+
+        &--about {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 27px;
+            letter-spacing: 0em;
+            text-align: left;
+
+            margin-top: 20px;
+        }
+    }
+
+    &__paragraph {
+        margin: 30px 0;
+        
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        &--read {
+            display: none;
+        }
+    }
+
+    &--desctop {
+        display: block;
+    }
+
+    &--mobile {
+        display: none;
+    }
+
+    
+}
+
+@media (max-width: $tabletWidth) {
+    .healing {
+        &--desctop {
+            display: none;
+        }
+    
+        &--mobile {
+            display: block;
+        }
+
+        background: $white;
+
+        &--blue {
+            box-shadow: 0px 4px 4px rgba(146, 146, 146, 0.25);  
+            background: $white;
+
+            &-inversion {
+                color: $white;
+                background: $blue;
+            }
+
+        }
+    
+        &--white {  
+            box-shadow: 0px 4px 4px rgba(146, 146, 146, 0.25);  
+            background: $blue;
+
+            &-inversion {
+                background: $white;
+            }
+        }
+        
+        &--hide {
+            display: none;
+        }
+        
+    
+        &__wrapper {
+            width: 100%;
+            color: $white;
+            background: $blue;
+            padding: 30px 50px 50px;
+            border-radius: 0px 100px 0px 50px;
+
+            &--nark, &--alko {
+                background-image: none;
+            }
+            
+            &--blue {
+                color: $black;
+                background: $white;
+
+                &-inversion {
+                    box-shadow: 0px 4px 4px rgba(146, 146, 146, 0.25);
+                    color: $white;
+                    background: $blue;
+                }
+            }
+
+            &--white {
+                color: $white;
+                background: $blue;
+
+                &-inversion {
+                    box-shadow: 0px 4px 4px rgba(146, 146, 146, 0.25);
+                    color: $black;
+                    background: $white;
+                }
+            }
+    
+            &--no-left-br {
+                border-radius: 0px 100px 0px 0;
+            }
+    
+            &--rehabilitation {
+                padding-bottom: 35px;
+            }
+    
+            &--whyreh {
+                padding: 30px 50px 50px;
+            }
+    
+            &--family {
+                padding-right: 50px;
+                padding-left: 50px;
+            }
+        }
+    
+            &__title {
+                
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 29px;
+                letter-spacing: 0em;
+                text-align: center;
+
+
+                &--family {
+                    margin-top: 50px;
+                }
+            }
+    
+        &__paragraph {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+
+            margin: 27px 0 32px;
+
+            &--center {
+                text-align: center;
+            }
+    
+        }
+    }
+}
